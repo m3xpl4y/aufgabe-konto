@@ -8,5 +8,15 @@ namespace Bankkonto
 {
     class Girokonto : Konto
     {
+        Konto konto;
+        public Girokonto(Konto konto)
+        {
+            this.konto = konto;
+        }
+        public int GetKontoNummer(Girokonto girokonto)
+        {
+            int i = girokonto.KontoNummer;
+            return i;
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace Bankkonto.Classes
 {
     class Kreditkonto : Konto
     {
+        Konto konto;
     }
 }
