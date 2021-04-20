@@ -8,7 +8,6 @@ namespace Bankkonto.Classes
 {
     class Laendlegirokonto : Konto 
     {
-        Konto konto;
-
+        
     }
 }
