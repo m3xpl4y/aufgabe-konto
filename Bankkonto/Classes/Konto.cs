@@ -15,14 +15,24 @@
         }
 
         //FUNCTIONS
-        public virtual double DepositAmount(double deposit)
+        public double DepositAmount(double deposit)
         {
             Balance = this.Balance + deposit;
             return Balance;
         }
-        public virtual double WithdrawAmount(double amount)
+        public double WithdrawAmount(double amount)
         {
-            Balance = this.Balance - amount;
+            double overLimit = Balance - (Limit);
+            if (overLimit <= amount)
+            {
+                double withdrawAmount = overLimit - amount;
+                System.Console.WriteLine("Sie haben Ihr Limit erreicht");
+                System.Console.WriteLine("Sie können nur: " + withdrawAmount + " abheben");
+            }
+            else
+            {
+                Balance = this.Balance - amount;
+            }
             return Balance;
         }
     }
