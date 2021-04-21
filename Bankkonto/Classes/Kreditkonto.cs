@@ -16,7 +16,5 @@
             KontoNummer = kontoNummer;
         }
 
-
-
     }
 }

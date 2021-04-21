@@ -7,6 +7,7 @@
         public override double Fees { get => base.Fees; set => base.Fees = value; }
         public override int KontoNummer { get => base.KontoNummer; set => base.KontoNummer = value; }
 
+        //Constructor
         public Laendlegirokonto(double balance, double limit, double fees, int kontoNummer)
         {
             Balance = balance;
@@ -14,8 +15,5 @@
             Fees = fees;
             KontoNummer = kontoNummer;
         }
-
-        //Constructor
-
     }
 }
