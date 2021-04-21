@@ -1,11 +1,4 @@
-﻿using Bankkonto.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bankkonto
+﻿namespace Bankkonto
 {
     class Konto
     {
@@ -14,13 +7,7 @@ namespace Bankkonto
         public int Limit { get; set; }
         public double Fees { get; set; }
         //CONSTRUCTOR
-        public Konto(int kontoNummer, double balance, int limit, double fees)
-        {
-            KontoNummer = kontoNummer;
-            Balance = balance;
-            Limit = limit;
-            Fees = fees;
-        }
+        
         //FUNCTIONS
         public double DepositAmount(double deposit)
         {
