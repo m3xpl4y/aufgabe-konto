@@ -1,0 +1,17 @@
+﻿        public void addKreditKonto()
+        {
+            while (true)
+            {
+                kreditkontoListe.Add(CreateKreditKonto()); ;
+                int i = kreditkontoListe.Count;
+                Console.WriteLine(i);
+                foreach(var konto in kreditkontoListe)
+                {
+                    Console.WriteLine(konto.KontoNummer);
+                }
+                //break;
+
+                //var firstItem = kreditkontoListe.ElementAt(0);
+                //Console.WriteLine(firstItem.KontoNummer);
+            }
+        }
