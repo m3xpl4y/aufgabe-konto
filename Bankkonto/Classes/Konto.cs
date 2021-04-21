@@ -3,7 +3,7 @@
     class Konto
     {
         //Variables + GET & SET
-        public int KontoNummer { get; set; }
+        public virtual int KontoNummer { get; set; }
         public virtual double Balance { get; set; }
         public virtual double Limit { get; set; }
         public virtual double Fees { get; set; }

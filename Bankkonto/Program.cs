@@ -7,11 +7,9 @@ namespace Bankkonto
     {
         static void Main(string[] args)
         {
-            Kreditkonto kk = new Kreditkonto(3.75, -200, -1200);
-            kk.KontoNummer = 1234649898;
-            Kreditkonto kk2 = new Kreditkonto(2.75, 200, -2000);
-            kk2.KontoNummer = 123456780;
-            
+            Kreditkonto kk = new Kreditkonto(1234649898, 3.75, -200, -1200);
+
+            Kreditkonto kk2 = new Kreditkonto(123456780, 2.75, 200, -2000);
 
 
             Console.WriteLine("Wählen Sie den Betrag den Sie abheben möchten");
