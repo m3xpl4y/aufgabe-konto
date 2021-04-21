@@ -11,6 +11,8 @@ namespace Bankkonto
             kk.KontoNummer = 1234649898;
             Kreditkonto kk2 = new Kreditkonto(2.75, 200, -2000);
             kk2.KontoNummer = 123456780;
+            
+
 
             Console.WriteLine("Wählen Sie den Betrag den Sie abheben möchten");
             double abhenben = Convert.ToDouble(Console.ReadLine());
