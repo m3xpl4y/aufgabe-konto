@@ -8,7 +8,7 @@
         public override int KontoNummer { get => base.KontoNummer; set => base.KontoNummer = value; }
 
         //Constructor
-        public Girokonto(double balance, double limit, double fees, int kontoNummer)
+        public Girokonto(int kontoNummer, double fees, double balance, double limit)
         {
             Balance = balance;
             Limit = limit;

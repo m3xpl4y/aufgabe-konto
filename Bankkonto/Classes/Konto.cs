@@ -20,7 +20,7 @@
             Balance = this.Balance + deposit;
             return Balance;
         }
-        public double WithdrawAmount(double amount)
+        public virtual double WithdrawAmount(double amount)
         {
             double overLimit = Balance - (Limit);
             if (overLimit <= amount)
