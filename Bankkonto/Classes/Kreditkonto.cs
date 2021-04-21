@@ -20,7 +20,7 @@
             {
                 double withdrawAmount = overLimit - amount;
                 System.Console.WriteLine("Sie haben Ihr Limit erreicht");
-                System.Console.WriteLine("Sie können nur: " + overLimit + " abheben");
+                System.Console.WriteLine("Sie können nur: " + withdrawAmount + " abheben");
             }
             else
             {

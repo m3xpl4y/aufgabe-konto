@@ -16,6 +16,12 @@ namespace Bankkonto
             kk.WithdrawAmount(abhenben);
 
             Console.WriteLine("Ihr Balance: " + kk.Balance);
+            Console.WriteLine("einzahlen");
+            double einzahlen = Convert.ToDouble(Console.ReadLine());
+            kk.DepositAmount(einzahlen);
+            Console.WriteLine("Ihr Kontostand beträgt: " + kk.Balance);
+
+            Console.WriteLine("Ihr Konto Nummer lautet: " + kk.KontoNummer);
 
         }
     }
