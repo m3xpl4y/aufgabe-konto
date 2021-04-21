@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DCV\\Documents\\projekte_c_sharp\\konto_bauen\\Bankkonto\\Bankkonto\\Bankkonto.csproj": {}
+    "C:\\Users\\Maximilian\\OneDrive\\projects\\aufgabe-konto\\Bankkonto\\Bankkonto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DCV\\Documents\\projekte_c_sharp\\konto_bauen\\Bankkonto\\Bankkonto\\Bankkonto.csproj": {
+    "C:\\Users\\Maximilian\\OneDrive\\projects\\aufgabe-konto\\Bankkonto\\Bankkonto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DCV\\Documents\\projekte_c_sharp\\konto_bauen\\Bankkonto\\Bankkonto\\Bankkonto.csproj",
+        "projectUniqueName": "C:\\Users\\Maximilian\\OneDrive\\projects\\aufgabe-konto\\Bankkonto\\Bankkonto.csproj",
         "projectName": "Bankkonto",
-        "projectPath": "C:\\Users\\DCV\\Documents\\projekte_c_sharp\\konto_bauen\\Bankkonto\\Bankkonto\\Bankkonto.csproj",
-        "packagesPath": "C:\\Users\\DCV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DCV\\Documents\\projekte_c_sharp\\konto_bauen\\Bankkonto\\Bankkonto\\obj\\",
+        "projectPath": "C:\\Users\\Maximilian\\OneDrive\\projects\\aufgabe-konto\\Bankkonto\\Bankkonto.csproj",
+        "packagesPath": "C:\\Users\\Maximilian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maximilian\\OneDrive\\projects\\aufgabe-konto\\Bankkonto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DCV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maximilian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
