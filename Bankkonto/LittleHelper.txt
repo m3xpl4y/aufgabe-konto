@@ -15,3 +15,18 @@
                 //Console.WriteLine(firstItem.KontoNummer);
             }
         }
+
+        Belibieges Konto auswählen nach dem man mehrere Konten erstellt hat
+
+#Konten anzeigen lassen welche verfügbar sind
+                int count = 0;
+                foreach(var konto in kreditkontoListe)
+                {
+                    Console.WriteLine("KreditKonto: "+ count+ " " + konto.KontoNummer);
+                    count++;
+                }
+#Folgend mit System.Linq einen auswählen
+                int userInput = Convert.ToInt32(Console.ReadLine());
+                var selectedKonto = kreditkontoListe.ElementAt(userInput);
+                var kontoNummer = selectedKonto.KontoNummer=
+#Damit hat man ein Konto ausgewählt zum weiter arbeiten
