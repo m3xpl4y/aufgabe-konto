@@ -12,11 +12,11 @@ namespace Bankkonto
         static void Main(string[] args)
         {
             CreateAccounts cr = new CreateAccounts();
-            cr.CreateAccountMenu();
-            AddKreditkonto addkonto = new AddKreditkonto();
-            addkonto.addKreditKonto();
-            AddGirokonto girokonto = new AddGirokonto();
-            girokonto.addGirokonto();
+            cr.CreateAccountFunction();
+            //AddKreditkonto addkonto = new AddKreditkonto();
+            //addkonto.addKreditKonto();
+            //AddGirokonto girokonto = new AddGirokonto();
+            //girokonto.addGirokonto();
             
 
             //Kreditkonto kk = new Kreditkonto(1234649898, 3.75, -200, 0);

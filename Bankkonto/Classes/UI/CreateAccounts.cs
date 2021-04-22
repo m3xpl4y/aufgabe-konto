@@ -17,7 +17,7 @@ namespace Bankkonto.Classes.UI
         AddLaendlekonto addLaendlekonto = new AddLaendlekonto();
 
         String[] AccountMenu = { "1. Girokonto", "2. Ländlekonto", "3. Sparbuch", "4. Kreditkonto", "5. Zurück" };
-        public void CreateAccountMenu()
+        private void CreateAccountMenu()
         {
             Console.WriteLine("KUNDENKONTO ERSTELLEN");
             Console.WriteLine("Bitte aus folgenden Möglichkeiten wählen");
@@ -29,6 +29,7 @@ namespace Bankkonto.Classes.UI
 
         public void CreateAccountFunction()
         {
+            CreateAccountMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
 
             switch(mySelection)
