@@ -22,7 +22,7 @@
                 int count = 0;
                 foreach(var konto in kreditkontoListe)
                 {
-                    Console.WriteLine("KreditKonto: "+ count+ " " + konto.KontoNummer);
+                    Console.WriteLine("KreditKonto: "+ count + " " + konto.KontoNummer);
                     count++;
                 }
 #Folgend mit System.Linq einen auswählen

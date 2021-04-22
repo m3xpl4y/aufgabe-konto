@@ -13,7 +13,6 @@ namespace Bankkonto
         {
             CreateAccounts cr = new CreateAccounts();
             cr.CreateAccountMenu();
-            cr.EinAusWahlMenu();
             AddKreditkonto addkonto = new AddKreditkonto();
             addkonto.addKreditKonto();
             AddGirokonto girokonto = new AddGirokonto();
