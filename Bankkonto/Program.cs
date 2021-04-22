@@ -9,7 +9,7 @@ namespace Bankkonto
     {
         static void Main(string[] args)
         {
-            AddKonto addkonto = new AddKonto();
+            AddKreditkonto addkonto = new AddKreditkonto();
             addkonto.addKreditKonto();
 
             //Kreditkonto kk = new Kreditkonto(1234649898, 3.75, -200, 0);
