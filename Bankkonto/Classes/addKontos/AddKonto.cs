@@ -8,10 +8,10 @@ namespace Bankkonto.Classes.addKontos
 {
     class AddKonto
     {
-        double Fees;
-        double Balance;
-        double Limit;
-        int KontoNummer;
+        private double Fees;
+        private double Balance;
+        private double Limit;
+        private int KontoNummer;
 
         List<Konto> kontos = new List<Konto>();
 
