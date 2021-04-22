@@ -1,4 +1,6 @@
 ﻿using Bankkonto.Classes;
+using Bankkonto.Classes.addKontos;
+using Bankkonto.Classes.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +11,14 @@ namespace Bankkonto
     {
         static void Main(string[] args)
         {
+            CreateAccounts cr = new CreateAccounts();
+            cr.CreateAccountMenu();
+            cr.EinAusWahlMenu();
             AddKreditkonto addkonto = new AddKreditkonto();
             addkonto.addKreditKonto();
+            AddGirokonto girokonto = new AddGirokonto();
+            girokonto.addGirokonto();
+            
 
             //Kreditkonto kk = new Kreditkonto(1234649898, 3.75, -200, 0);
             //Girokonto girokonto1 = new Girokonto(55555666, 2.2, 1500, -250);

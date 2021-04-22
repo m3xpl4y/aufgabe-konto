@@ -32,7 +32,7 @@ namespace Bankkonto.Classes
                 Console.WriteLine(i);
                 foreach(var konto in kreditkontoListe)
                 {
-                    Console.WriteLine(konto.KontoNummer);
+                    Console.WriteLine("KreditKonto: " + konto.KontoNummer);
                 }
                 //break;
 

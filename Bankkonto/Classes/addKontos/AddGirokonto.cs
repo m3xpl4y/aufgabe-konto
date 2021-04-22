@@ -21,7 +21,7 @@ namespace Bankkonto.Classes.addKontos
             Girokonto girokonto = new Girokonto(KontoNummer, Fees, Balance, Limit);
             return girokonto;
         }
-        public void addgirokonto()
+        public void addGirokonto()
         {
             while (true)
             {
@@ -30,7 +30,7 @@ namespace Bankkonto.Classes.addKontos
                 Console.WriteLine(i);
                 foreach (var konto in girokontoliste)
                 {
-                    Console.WriteLine(konto.KontoNummer);
+                    Console.WriteLine("GiroKonto: " + konto.KontoNummer);
                 }
                 //break;
 
