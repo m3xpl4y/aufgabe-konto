@@ -225,3 +225,4 @@ project.lock.json
 #####
 obj/Debug/net5.0
 .vs/
+.vs/Bankkonto/v16
