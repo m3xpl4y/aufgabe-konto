@@ -28,5 +28,10 @@
 #Folgend mit System.Linq einen auswählen
                 int userInput = Convert.ToInt32(Console.ReadLine());
                 var selectedKonto = kreditkontoListe.ElementAt(userInput);
-                var kontoNummer = selectedKonto.KontoNummer=
-#Damit hat man ein Konto ausgewählt zum weiter arbeiten
+                var kontoNummer = selectedKonto.KontoNummer
+                Console.WriteLine("Ausgewähltes Konto: " + kontoNummer);    
+                Console.WriteLine("Ausgewähltes Konto: " + selectedKonto.KontoNummer);
+
+#Beide Ausgaben möglich 
+#Damit hat man ein Konto ausgewählt zum weiter arbeiten, duch den ausgewählten int in userInput hat man das Konto für die 
+#verfügbaren änderungsmöglichkeiten zur verfügung sowie für die Ein- und Auszahlungen
