@@ -35,7 +35,7 @@ namespace Bankkonto.Classes.addKontos
                 {
                     Console.WriteLine(konto.KontoNummer);
                 }
-                //break;
+                break;
 
                 //var firstItem = kreditkontoListe.ElementAt(0);
                 //Console.WriteLine(firstItem.KontoNummer);
