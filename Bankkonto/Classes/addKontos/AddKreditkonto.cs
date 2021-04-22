@@ -9,7 +9,7 @@ namespace Bankkonto.Classes
 
 
         //INPUT FUNCTIONS
-        public Kreditkonto CreateKreditKonto()
+        private Kreditkonto CreateKreditKonto()
         {
             Console.WriteLine("Bitte Fees eingeben:");
             var Fees = Convert.ToInt32(Console.ReadLine());

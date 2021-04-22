@@ -8,7 +8,7 @@ namespace Bankkonto.Classes.addKontos
     {
         List<Sparbuch> sparbuchliste = new List<Sparbuch>();
 
-        public Sparbuch CreateSparbuch()
+        private Sparbuch CreateSparbuch()
         {
             Console.WriteLine("Bitte Fees eingeben:");
             var Fees = Convert.ToInt32(Console.ReadLine());

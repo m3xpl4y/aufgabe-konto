@@ -8,7 +8,7 @@ namespace Bankkonto.Classes.addKontos
     {
         List<Girokonto> girokontoliste = new List<Girokonto>();
 
-        public Girokonto CreateGirokonto()
+        private Girokonto CreateGirokonto()
         {
             Console.WriteLine("Bitte Fees eingeben:");
             var Fees = Convert.ToInt32(Console.ReadLine());

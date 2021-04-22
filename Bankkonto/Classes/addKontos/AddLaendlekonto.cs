@@ -10,7 +10,7 @@ namespace Bankkonto.Classes.addKontos
     {
         List<Laendlegirokonto> laendlegirokontoliste = new List<Laendlegirokonto>();
 
-        public Laendlegirokonto CreateLaendlekonto()
+        private Laendlegirokonto CreateLaendlekonto()
         {
             Console.WriteLine("Bitte Fees eingeben:");
             var Fees = Convert.ToInt32(Console.ReadLine());
