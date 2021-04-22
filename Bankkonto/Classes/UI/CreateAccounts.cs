@@ -11,12 +11,10 @@ namespace Bankkonto.Classes.UI
 {
     class CreateAccounts
     {
-        AddGirokonto addGirokonto = new AddGirokonto();
-        AddSparbuch addSparbuch = new AddSparbuch();
-        AddKreditkonto addKreditkonto = new AddKreditkonto();
-        AddLaendlekonto addLaendlekonto = new AddLaendlekonto();
+        AddKonto addKonto = new AddKonto();
 
         String[] AccountMenu = { "1. Girokonto", "2. Ländlekonto", "3. Sparbuch", "4. Kreditkonto", "5. Zurück" };
+      
         private void CreateAccountMenu()
         {
             Console.WriteLine("KUNDENKONTO ERSTELLEN");
@@ -36,19 +34,19 @@ namespace Bankkonto.Classes.UI
             {
                 case 1: 
                     Console.WriteLine("Girokonto erstellen!");
-                    addGirokonto.addGirokonto();
+                    addKonto.addGirokonto();
                     break;
                 case 2:
                     Console.WriteLine("Ländlekonto erstellen!");
-                    addLaendlekonto.addLaendlekonto();
+                    addKonto.addLaendlekonto();
                     break;
                 case 3:
                     Console.WriteLine("Sparbuch erstellen!");
-                    addSparbuch.addSparbuch();
+                    addKonto.addSparbuch();
                     break;
                 case 4:
                     Console.WriteLine("Kreditkonto erstellen!");
-                    addKreditkonto.addKreditKonto();
+                    addKonto.addKreditkonto();
                     break;
                 case 5:
                     Console.WriteLine("Hier kommt Menu schritt zurück");

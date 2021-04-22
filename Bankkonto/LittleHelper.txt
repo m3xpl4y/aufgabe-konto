@@ -35,3 +35,7 @@
 #Beide Ausgaben möglich 
 #Damit hat man ein Konto ausgewählt zum weiter arbeiten, duch den ausgewählten int in userInput hat man das Konto für die 
 #verfügbaren änderungsmöglichkeiten zur verfügung sowie für die Ein- und Auszahlungen
+
+-Konto erstellen
+-Konto wählen
+    -Kontoart(4)
