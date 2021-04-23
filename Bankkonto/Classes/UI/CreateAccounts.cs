@@ -1,6 +1,4 @@
 ﻿using Bankkonto.Classes.addKontos;
-using Bankkonto.Classes.UI;
-using Bankkonto.Classes;
 using System;
 
 namespace Bankkonto.Classes.UI
