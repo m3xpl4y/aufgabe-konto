@@ -1,9 +1,4 @@
-﻿using Bankkonto.Classes;
-using Bankkonto.Classes.addKontos;
-using Bankkonto.Classes.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Bankkonto.Classes.UI;
 
 namespace Bankkonto
 {
@@ -12,7 +7,7 @@ namespace Bankkonto
         static void Main(string[] args)
         {
             MainMenu mM = new MainMenu();
-            mM.Menu();
+            mM.PrintMenuFunction();
         }
     }
 }
