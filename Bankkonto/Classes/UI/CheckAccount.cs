@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bankkonto.Classes.UI
 {
-    class CheckAccounts
+    class CheckAccount
     {
+        String[] checkAccounts = { "1. Konten anzeigen"};
     }
 }

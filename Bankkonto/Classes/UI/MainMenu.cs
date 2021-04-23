@@ -13,7 +13,7 @@ namespace Bankkonto.Classes.UI
         private void PrintMenu()
         {
             Console.WriteLine("WILLKOMMEN BEI DER BANK OF 'Wir nehmen dein Geld und du bekommst es nicht mehr zurück");
-            Console.WriteLine("Wähle wie wir dein Geld nehmen sollen");
+            Console.WriteLine("Wählen Sie wie wir dein Geld nehmen sollen");
             foreach (string menu in mainMenu)
             {
                 Console.WriteLine(menu);
@@ -29,6 +29,7 @@ namespace Bankkonto.Classes.UI
                 case 1:
                     Console.Clear();
                     cr.CreateAccountFunction();
+
                     break;
                 case 2:
                     break;
