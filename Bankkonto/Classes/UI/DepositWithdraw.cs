@@ -33,7 +33,9 @@ namespace Bankkonto.Classes.UI
                 case 2:
                     break;
                 case 3:
-                    Environment.Exit(0);
+                    Console.Clear();
+                    MainMenu mm = new MainMenu();
+                    mm.PrintMenuFunction();
                     break;
                 default: 
                     break;

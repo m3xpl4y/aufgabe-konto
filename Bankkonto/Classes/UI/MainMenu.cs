@@ -29,9 +29,9 @@ namespace Bankkonto.Classes.UI
                 case 1:
                     Console.Clear();
                     cr.CreateAccountFunction();
-
                     break;
                 case 2:
+                    Console.Clear();
                     break;
                 case 3:
                     Environment.Exit(0);
