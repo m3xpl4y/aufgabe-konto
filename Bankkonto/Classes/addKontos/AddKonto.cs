@@ -17,7 +17,7 @@ namespace Bankkonto.Classes.addKontos
         private void AddParameters()
         {
             Console.WriteLine("Bitte Fees eingeben:");
-            Fees = Convert.ToInt32(Console.ReadLine());
+            Fees = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Bitte Balance eingeben:");
             Balance = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Bitte Limit eingeben:");
