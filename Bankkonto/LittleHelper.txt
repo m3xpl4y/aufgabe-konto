@@ -26,7 +26,7 @@
                     count++;
                 }
 #Folgend mit System.Linq einen auswählen
-                int userInput = Convert.ToInt32(Console.ReadLine());
+
                 var selectedKonto = kreditkontoListe.ElementAt(userInput);
                 var kontoNummer = selectedKonto.KontoNummer
                 Console.WriteLine("Ausgewähltes Konto: " + kontoNummer);    

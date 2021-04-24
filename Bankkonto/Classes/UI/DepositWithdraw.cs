@@ -19,7 +19,7 @@ namespace Bankkonto.Classes.UI
                 Console.WriteLine(menu);
             }
         }
-        public void PrintMenuFunction()
+        public void PrintMenuFunction(List<Konto> kontoListe)
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +35,7 @@ namespace Bankkonto.Classes.UI
                 case 3:
                     Console.Clear();
                     MainMenu mm = new MainMenu();
-                    mm.PrintMenuFunction();
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 default: 
                     break;

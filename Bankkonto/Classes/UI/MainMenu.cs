@@ -1,37 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Bankkonto.Classes.UI
 {
     class MainMenu
     {
-        CreateAccounts cr = new CreateAccounts();
-        DepositWithdraw dw = new DepositWithdraw();
-
-
         String[] mainMenu = { "1. Konto erstellen", "2. Konto abrufen", "3. Beenden" };
-
         private void PrintMenu()
         {
-            Console.WriteLine("WILLKOMMEN BEI DER BANK OF 'Wir nehmen dein Geld und du bekommst es nicht mehr zurück");
+            Console.WriteLine();
+            Console.WriteLine("WILLKOMMEN BEI DER BANK OF");
+            Console.WriteLine("**Wir nehmen dein Geld und du bekommst es nicht mehr zurück**");
+            Console.WriteLine();
             Console.WriteLine("Wählen Sie wie wir dein Geld nehmen sollen");
             foreach (string menu in mainMenu)
             {
                 Console.WriteLine(menu);
             }
         }
-        public void PrintMenuFunction()
+        public void PrintMenuFunction(List<Konto> kontoListe)
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
-
             switch (mySelection)
             {
                 case 1:
-                    Console.Clear();
-                    cr.CreateAccountFunction();
+                    CreateAccounts cr = new CreateAccounts();
+                    cr.CreateAccountFunction(kontoListe);
                     break;
                 case 2:
-                    Console.Clear();
+                    CheckAccount ca = new CheckAccount();
+                    ca.PrintMenuFunction(kontoListe);
                     break;
                 case 3:
                     Environment.Exit(0);

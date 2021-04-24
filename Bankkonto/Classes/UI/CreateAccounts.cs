@@ -1,5 +1,6 @@
 ﻿using Bankkonto.Classes.addKontos;
 using System;
+using System.Collections.Generic;
 
 namespace Bankkonto.Classes.UI
 {
@@ -17,7 +18,7 @@ namespace Bankkonto.Classes.UI
             }
         }
 
-        public void CreateAccountFunction()
+        public void CreateAccountFunction(List<Konto> kontoListe)
         {
             CreateAccountMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
@@ -26,24 +27,28 @@ namespace Bankkonto.Classes.UI
             {
                 case 1:
                     Console.WriteLine("Girokonto erstellen!");
-                    addKonto.addGirokonto();
+                    addKonto.addGirokonto(kontoListe);
+                    MainMenu mm = new MainMenu();
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 case 2:
                     Console.WriteLine("Ländlekonto erstellen!");
-                    addKonto.addLaendlekonto();
+                    addKonto.addLaendlekonto(kontoListe);
+                    MainMenu mm2 = new MainMenu();
+                    mm2.PrintMenuFunction(kontoListe);
                     break;
                 case 3:
                     Console.WriteLine("Sparbuch erstellen!");
-                    addKonto.addSparbuch();
+                    addKonto.addSparbuch(kontoListe);
                     break;
                 case 4:
                     Console.WriteLine("Kreditkonto erstellen!");
-                    addKonto.addKreditkonto();
+                    addKonto.addKreditkonto(kontoListe);
                     break;
                 case 5:
                     Console.Clear();
-                    MainMenu mm = new MainMenu();
-                    mm.PrintMenuFunction();
+                    MainMenu mm5 = new MainMenu();
+                    mm5.PrintMenuFunction(kontoListe);
                     break;
                 default:
                     Console.WriteLine("Gibt doch das was da stehen ein");
