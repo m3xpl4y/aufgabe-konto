@@ -22,6 +22,7 @@ namespace Bankkonto.Classes.UI
         {
             Console.WriteLine("Kontopostition wählen");
             int pos = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
             var selectedKonto = kontoListe.ElementAt(pos);
             var KontoNummer = selectedKonto.KontoNummer;
             var Fees = selectedKonto.Fees;
@@ -35,7 +36,8 @@ namespace Bankkonto.Classes.UI
                 "Guthaben: " + Balance + "\n" +
                 "Verfügbar: " + available);
             Console.WriteLine("Zum Fortfahren beliebige Taste drücken");
-            Console.ReadLine();
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }

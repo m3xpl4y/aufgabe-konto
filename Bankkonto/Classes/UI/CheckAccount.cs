@@ -10,7 +10,7 @@ namespace Bankkonto.Classes.UI
     class CheckAccount
     {
         String[] checkAccounts = { "1. Konten anzeigen", "2. Konto wählen und ändern", "3. Zurück"};
-
+        DetailsAccount da = new DetailsAccount();
         private void PrintMenu()
         {
             Console.WriteLine("Bitte wählen!");
@@ -23,7 +23,6 @@ namespace Bankkonto.Classes.UI
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
-            AddKonto ad = new AddKonto();
             MainMenu mm = new MainMenu();
             DetailsAccount da = new DetailsAccount();
             switch(mySelection)
@@ -34,6 +33,24 @@ namespace Bankkonto.Classes.UI
                     mm.PrintMenuFunction(kontoListe);
                     break;
                 case 2:
+                    Console.Clear();
+                    ChangeDetailsMenu();
+                    int newSelection = Convert.ToInt32(Console.ReadLine());
+                    if(newSelection == 1)
+                    {
+                        Console.WriteLine("Ihre neue Limit wurde auf " + ChangeLimit(kontoListe) + " gesetzt");
+                        mm.PrintMenuFunction(kontoListe);
+                    }
+                    else if (newSelection == 2)
+                    {
+                        Console.WriteLine("Ihre neue Zinsen wurden auf " + ChangeFees(kontoListe) + " gesetzt");
+                        mm.PrintMenuFunction(kontoListe);
+                    }
+                    else
+                    {
+                        mm.PrintMenuFunction(kontoListe);
+                    }
+
                     break;
                 case 3:
                     Console.Clear();
@@ -43,5 +60,32 @@ namespace Bankkonto.Classes.UI
                     break;
             }
         }
-}
+        private void ChangeDetailsMenu()
+        {
+            String[] detailsMenu = { "1. Überziehungsramen ändern", "2. Zinsen ändern" };
+            foreach(string menu in detailsMenu)
+            {
+                Console.WriteLine(menu);
+            }
+            Console.WriteLine("Bitte eine Auswahl treffen:");
+        }
+        private double ChangeLimit(List<Konto> kontoListe)
+        {
+            da.GetKontoNumber(kontoListe);
+            Console.WriteLine("Kontopostition wählen");
+            int pos = Convert.ToInt32(Console.ReadLine());
+            var selectedKonto = kontoListe.ElementAt(pos);
+            selectedKonto.Limit = Convert.ToDouble(Console.ReadLine());
+            return selectedKonto.Limit;
+        }
+        private double ChangeFees(List<Konto> kontoListe)
+        {
+            da.GetKontoNumber(kontoListe);
+            Console.WriteLine("Kontopostition wählen");
+            int pos = Convert.ToInt32(Console.ReadLine());
+            var selectedKonto = kontoListe.ElementAt(pos);
+            selectedKonto.Fees = Convert.ToDouble(Console.ReadLine());
+            return selectedKonto.Fees;
+        }
+    }
 }

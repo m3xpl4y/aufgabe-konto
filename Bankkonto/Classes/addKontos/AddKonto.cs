@@ -33,7 +33,11 @@ namespace Bankkonto.Classes.addKontos
             int count = 0;
             foreach (var konto in kontoListe)
             {
-                Console.WriteLine("Position: " + count + " Kontonummer: " + konto.KontoNummer);
+                Console.Write("Position: ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(count);
+                Console.ResetColor();
+                Console.WriteLine(" Kontonummer: " + konto.KontoNummer);
                 count++;
             }
             return kontoListe;
