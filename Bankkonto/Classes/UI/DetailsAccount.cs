@@ -29,6 +29,10 @@ namespace Bankkonto.Classes.UI
             var Limit = selectedKonto.Limit;
             var Balance = selectedKonto.Balance;
             var available = Balance - (Limit);
+            if(available < Limit)
+            {
+                available = 0;
+            }
             Console.WriteLine("Folgende Informationen stehen zur Verfügung: \n" +
                 "Kontonummer: " + KontoNummer + "\n" +
                 "Zinsen: " + Fees + "\n" +

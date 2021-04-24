@@ -10,7 +10,7 @@ namespace Bankkonto.Classes.UI
     class CheckAccount
     {
         String[] checkAccounts = { "1. Konten anzeigen", "2. Konto wählen und ändern", "3. Zurück"};
-        DetailsAccount da = new DetailsAccount();
+        AddKonto ad = new AddKonto();
         private void PrintMenu()
         {
             Console.WriteLine("Bitte wählen!");
@@ -71,18 +71,20 @@ namespace Bankkonto.Classes.UI
         }
         private double ChangeLimit(List<Konto> kontoListe)
         {
-            da.GetKontoNumber(kontoListe);
+            ad.GetKontoListe(kontoListe);
             Console.WriteLine("Kontopostition wählen");
             int pos = Convert.ToInt32(Console.ReadLine());
             var selectedKonto = kontoListe.ElementAt(pos);
+            Console.WriteLine("Neuer Überziehungsrahmen eingeben:");
             selectedKonto.Limit = Convert.ToDouble(Console.ReadLine());
             return selectedKonto.Limit;
         }
         private double ChangeFees(List<Konto> kontoListe)
         {
-            da.GetKontoNumber(kontoListe);
+            ad.GetKontoListe(kontoListe);
             Console.WriteLine("Kontopostition wählen");
             int pos = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Zinsen eingeben:");
             var selectedKonto = kontoListe.ElementAt(pos);
             selectedKonto.Fees = Convert.ToDouble(Console.ReadLine());
             return selectedKonto.Fees;
