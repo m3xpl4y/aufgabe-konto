@@ -22,33 +22,36 @@ namespace Bankkonto.Classes.UI
         {
             CreateAccountMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
-
+            MainMenu mm = new MainMenu();
             switch (mySelection)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("Girokonto erstellen!");
                     addKonto.addGirokonto(kontoListe);
-                    MainMenu mm = new MainMenu();
                     mm.PrintMenuFunction(kontoListe);
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("Ländlekonto erstellen!");
                     addKonto.addLaendlekonto(kontoListe);
-                    MainMenu mm2 = new MainMenu();
-                    mm2.PrintMenuFunction(kontoListe);
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Sparbuch erstellen!");
                     addKonto.addSparbuch(kontoListe);
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 case 4:
+                    Console.Clear();
                     Console.WriteLine("Kreditkonto erstellen!");
                     addKonto.addKreditkonto(kontoListe);
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 case 5:
                     Console.Clear();
-                    MainMenu mm5 = new MainMenu();
-                    mm5.PrintMenuFunction(kontoListe);
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 default:
                     Console.WriteLine("Gibt doch das was da stehen ein");

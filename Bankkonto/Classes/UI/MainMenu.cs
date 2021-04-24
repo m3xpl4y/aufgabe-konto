@@ -22,14 +22,16 @@ namespace Bankkonto.Classes.UI
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
+            CreateAccounts cr = new CreateAccounts();
+            CheckAccount ca = new CheckAccount();
             switch (mySelection)
             {
                 case 1:
-                    CreateAccounts cr = new CreateAccounts();
+                    Console.Clear();
                     cr.CreateAccountFunction(kontoListe);
                     break;
                 case 2:
-                    CheckAccount ca = new CheckAccount();
+                    Console.Clear();
                     ca.PrintMenuFunction(kontoListe);
                     break;
                 case 3:

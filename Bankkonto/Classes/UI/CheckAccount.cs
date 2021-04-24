@@ -22,19 +22,19 @@ namespace Bankkonto.Classes.UI
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
-
+            MainMenu mm = new MainMenu();
+            DetailsAccount da = new DetailsAccount();
             switch(mySelection)
             {
                 case 1:
-                    //Console.Clear();
-                    DetailsAccount da = new DetailsAccount();
+                    Console.Clear();
                     da.GetKontoNumber(kontoListe);
+                    mm.PrintMenuFunction(kontoListe);
                     break;
                 case 2:
                     break;
                 case 3:
-                    //Console.Clear();
-                    MainMenu mm = new MainMenu();
+                    Console.Clear();
                     mm.PrintMenuFunction(kontoListe);
                     break;
                 default:
