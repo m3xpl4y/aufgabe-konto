@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Bankkonto.Classes.addKontos;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace Bankkonto.Classes.UI
         {
             PrintMenu();
             int mySelection = Convert.ToInt32(Console.ReadLine());
+            AddKonto ad = new AddKonto();
             MainMenu mm = new MainMenu();
             DetailsAccount da = new DetailsAccount();
             switch(mySelection)

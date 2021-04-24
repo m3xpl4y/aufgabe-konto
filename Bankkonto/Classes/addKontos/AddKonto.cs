@@ -33,7 +33,7 @@ namespace Bankkonto.Classes.addKontos
             int count = 0;
             foreach (var konto in kontoListe)
             {
-                Console.WriteLine("KreditKonto: " + count + " " + konto.KontoNummer);
+                Console.WriteLine("Position: " + count + " Kontonummer: " + konto.KontoNummer);
                 count++;
             }
             return kontoListe;
@@ -43,61 +43,25 @@ namespace Bankkonto.Classes.addKontos
         {
             AddParameters();
             Konto girokonto = new Girokonto(KontoNummer, Fees, Balance, Limit);
-                kontoListe.Add(girokonto); ;
-                int i = kontoListe.Count;
-                Console.WriteLine(i);
-                foreach (var konto in kontoListe)
-                {
-                    Console.WriteLine("GiroKonto: " + konto.KontoNummer);
-                }
+                kontoListe.Add(girokonto);
         }
         public void addSparbuch(List<Konto> kontoListe)
         {
             AddParameters();
             Konto sparbuch = new Sparbuch(KontoNummer, Fees, Balance, Limit);
-            while (true)
-            {
-                kontoListe.Add(sparbuch); ;
-                int i = kontoListe.Count;
-                Console.WriteLine(i);
-                foreach (var konto in kontoListe)
-                {
-                    Console.WriteLine("Sparbuch: " + konto.KontoNummer);
-                }
-                break;
-            }
+                kontoListe.Add(sparbuch);
         }
         public void addLaendlekonto(List<Konto> kontoListe)
         {
             AddParameters();
             Konto laendlekonto = new Laendlegirokonto(KontoNummer, Fees, Balance, Limit);
-            while (true)
-            {
-                kontoListe.Add(laendlekonto); ;
-                int i = kontoListe.Count;
-                Console.WriteLine(i);
-                foreach (var konto in kontoListe)
-                {
-                    Console.WriteLine("Ländlegirokonto: " + konto.KontoNummer);
-                }
-                break;
-            }
+                kontoListe.Add(laendlekonto);
         }
         public void addKreditkonto(List<Konto> kontoListe)
         {
             AddParameters();
             Konto kreditkonto = new Kreditkonto(KontoNummer, Fees, Balance, Limit);
-            while (true)
-            {
-                kontoListe.Add(kreditkonto); ;
-                int i = kontoListe.Count;
-                Console.WriteLine(i);
-                foreach (var konto in kontoListe)
-                {
-                    Console.WriteLine("Ländlegirokonto: " + konto.KontoNummer);
-                }
-                break;
-            }
+                kontoListe.Add(kreditkonto);
         }
     }
 }

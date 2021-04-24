@@ -5,7 +5,7 @@ namespace Bankkonto.Classes.UI
 {
     class MainMenu
     {
-        String[] mainMenu = { "1. Konto erstellen", "2. Konto abrufen", "3. Beenden" };
+        String[] mainMenu = { "1. Konto erstellen", "2. Konto abrufen", "3. Ein- & Auszahlen", "4. Beenden" };
         private void PrintMenu()
         {
             Console.WriteLine();
@@ -24,6 +24,7 @@ namespace Bankkonto.Classes.UI
             int mySelection = Convert.ToInt32(Console.ReadLine());
             CreateAccounts cr = new CreateAccounts();
             CheckAccount ca = new CheckAccount();
+            DepositWithdraw dw = new DepositWithdraw();
             switch (mySelection)
             {
                 case 1:
@@ -34,7 +35,11 @@ namespace Bankkonto.Classes.UI
                     Console.Clear();
                     ca.PrintMenuFunction(kontoListe);
                     break;
-                case 3:
+                case 3: 
+                    Console.Clear();
+                    dw.PrintMenuFunction(kontoListe);
+                    break;
+                case 4:
                     Environment.Exit(0);
                     break;
                 default: break;
